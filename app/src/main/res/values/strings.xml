@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">psLibrary</string>
+    <string name="heading">PNS Librabry\n</string>
+    <string name="englishBook">English Books</string>
+    <string name="computerBook">Computer Science</string>
+    <string name="marathiBook">Marathi Books</string>
+    <string name="collegeBook">College Books</string>
+
+    <!--    English Book Started From Here-->
+
+    <string name="authorDiscription1">Dear Stranger, You Deserve To Be Loved. \nBy Ashish Baghrecha.</string>
+    <string name="authorDiscription2">Rich Dad, Poor Dad \n By Robert T Kiyosaki.</string>
+    <string name="authorDiscription3">How To Win Every Argument \n By Madsen Pirie</string>
+    <string name="authorDiscription4">Think And Grow Rich \n By Nepoleon Hill</string>
+    <string name="authorDiscription5">Five Love Language \n By Tyler Gary Chapman</string>
+    <string name="authorDiscription6">Five Ways To Boost Your Mental Energy Today \n  Youness El Aamery</string>
+
+    <!--    Marathi Book Started From Here-->
+
+    <string name="authorMarDiscription1">श्री गणेश स्तोत्र </string>
+    <string name="authorMarDiscription2">श्री गणपती अथर्वशीर्षक </string>
+    <string name="authorMarDiscription3">श्री कृष्ण चरित्र </string>
+    <string name="authorMarDiscription4">श्रीमद भगवद गीत  </string>
+
+    <!--    Computer Science Started From Here-->
+
+    <string name="authorComDiscription1">C Programming Basic. \n By. Marshall Brain</string>
+    <string name="authorComDiscription2">Cpp Programming \n By. Wiki Books</string>
+    <string name="authorComDiscription3">Java Programming \n By. TutorialsPoints </string>
+    <string name="authorComDiscription4">Data Structure With Java \n By. John R. Hubbard</string>
+
+    <!--    Computer Science Started From Here-->
+    <string name="authorClgDiscription1">Android Programming</string>
+    <string name="authorClgDiscription2">Advance Java</string>
+    <string name="authorClgDiscription3">Recent Trends In IT</string>
+    <string name="authorClgDiscription4">Software Teasting</string>
+
+</resources>

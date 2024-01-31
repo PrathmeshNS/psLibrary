@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_gradient_color"
+    android:textColor="@drawable/custom_gradient_color"
+    tools:context=".MainActivity"
+    android:layout_width="wrap_content">
+
+    <TextView
+        android:id="@+id/Heading"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="monospace"
+        android:text="@string/heading"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="1033dp"
+        android:layout_below="@+id/Heading">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- English Book Are Started From Here-->
+            <TextView
+                android:id="@+id/bookDescriptionOne"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/englishBook"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- Marathi Books Are Started From here-->
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollViewOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:foregroundGravity="center_vertical"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/gradBookEngOne"
+                        android:layout_width="190dp"
+                        android:layout_height="295dp"
+                        android:layout_marginEnd="10dp"
+                        android:onClick="bookEngOne"
+                        app:cardCornerRadius="15dp"
+                        tools:ignore="TextSizeCheck">
+
+                        <TextView
+                            android:id="@+id/textBookEngOne"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="220dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="serif-monospace"
+                            android:text="@string/authorDiscription1"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageBookEngOne"
+                            android:layout_width="220dp"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="-15dp"
+                            android:layout_marginTop="10dp"
+                            android:importantForAccessibility="no"
+                            app:srcCompat="@drawable/dearstranger"
+                            tools:ignore="RtlHardcoded" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/gradBookEngTwo"
+                        android:layout_width="190dp"
+                        android:layout_height="295dp"
+                        android:layout_marginEnd="10dp"
+                        android:onClick="bookEngTwo"
+                        app:cardCornerRadius="15dp"
+                        tools:ignore="TextSizeCheck">
+
+                        <TextView
+                            android:id="@+id/textBookEngTwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="220dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="serif-monospace"
+                            android:text="@string/authorDiscription2"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageBookEngTwo"
+                            android:layout_width="220dp"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="-15dp"
+                            android:layout_marginTop="10dp"
+                            android:importantForAccessibility="no"
+                            app:srcCompat="@drawable/richdadpoordad"
+                            tools:ignore="RtlHardcoded" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/gradBookEngThree"
+                        android:layout_width="190dp"
+                        android:layout_height="295dp"
+                        android:layout_marginRight="15dp"
+                        android:onClick="bookEngThree"
+                        app:cardCornerRadius="15dp"
+                        tools:ignore="RtlHardcoded,TextSizeCheck">
+
+                        <TextView
+                            android:id="@+id/textBookEngThree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="220dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="serif-monospace"
+                            android:text="@string/authorDiscription3"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageBookEngThree"
+                            android:layout_width="220dp"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="-15dp"
+                            android:layout_marginTop="10dp"
+                            android:importantForAccessibility="no"
+                            app:srcCompat="@drawable/howtowineveryargument"
+                            tools:ignore="RtlHardcoded" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/gradBookEngFour"
+                        android:layout_width="190dp"
+                        android:layout_height="295dp"
+                        android:layout_marginRight="15dp"
+                        android:onClick="bookEngFour"
+                        app:cardCornerRadius="15dp"
+                        tools:ignore="RtlHardcoded,TextSizeCheck">
+
+                        <TextView
+                            android:id="@+id/textBookEngFour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="220dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="serif-monospace"
+                            android:text="@string/authorDiscription4"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageBookEngFour"
+                            android:layout_width="220dp"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="-15dp"
+                            android:layout_marginTop="10dp"
+                            android:importantForAccessibility="no"
+                            app:srcCompat="@drawable/thinkandgrowrich"
+                            tools:ignore="RtlHardcoded" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/gradBookEngFive"
+                        android:layout_width="190dp"
+                        android:layout_height="295dp"
+                        android:layout_marginRight="15dp"
+                        android:onClick="bookEngFive"
+                        app:cardCornerRadius="15dp"
+                        tools:ignore="RtlHardcoded,TextSizeCheck">
+
+                        <TextView
+                            android:id="@+id/textBookEngFive"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="220dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="serif-monospace"
+                            android:text="@string/authorDiscription5"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageBookEngFive"
+                            android:layout_width="220dp"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="-15dp"
+                            android:layout_marginTop="10dp"
+                            android:importantForAccessibility="no"
+                            app:srcCompat="@drawable/fivelovelanguage"
+                            tools:ignore="RtlHardcoded" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/gradBookEngsix"
+                        android:layout_width="190dp"
+                        android:layout_height="295dp"
+                        android:layout_marginRight="15dp"
+                        android:onClick="bookEngSix"
+                        app:cardCornerRadius="15dp"
+                        tools:ignore="RtlHardcoded,TextSizeCheck">
+
+                        <TextView
+                            android:id="@+id/textBookEngSix"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="220dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="serif-monospace"
+                            android:text="@string/authorDiscription6"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageBookEngSix"
+                            android:layout_width="220dp"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="-15dp"
+                            android:layout_marginTop="10dp"
+                            android:importantForAccessibility="no"
+                            app:srcCompat="@drawable/fivewaytoboostyourmentalengergytoday"
+                            tools:ignore="RtlHardcoded" />
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/bookDescriptionTwo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/marathiBook"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollViewTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:foregroundGravity="center_vertical"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/gradBookMarOne"
+                        android:layout_width="190dp"
+                        android:layout_height="295dp"
+                        android:layout_marginRight="15dp"
+                        android:onClick="bookMarOne"
+                        app:cardCornerRadius="15dp"
+                        tools:ignore="RtlHardcoded,TextSizeCheck">
+
+                        <TextView
+                            android:id="@+id/textBookMarOne"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="240dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="serif-monospace"
+                            android:text="@string/authorMarDiscription1"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageBookMarOne"
+                            android:layout_width="220dp"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="-15dp"
+                            android:layout_marginTop="10dp"
+                            android:importantForAccessibility="no"
+                            android:paddingTop="10dp"
+                            app:srcCompat="@drawable/shriganeshstotra"
+                            tools:ignore="RtlHardcoded" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/gradBookMarTwo"
+                        android:layout_width="190dp"
+                        android:layout_height="295dp"
+                        android:layout_marginEnd="15dp"
+                        android:onClick="bookMarTwo"
+                        app:cardCornerRadius="15dp"
+                        tools:ignore="TextSizeCheck">
+
+                        <TextView
+                            android:id="@+id/textBookMarTwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="240dp"
+                            android:layout_marginEnd="10dp"
+                            android:fontFamily="serif-monospace"
+                            android:text="@string/authorMarDiscription2"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageBookMarTwo"
+                            android:layout_width="220dp"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="-15dp"
+                            android:layout_marginTop="10dp"
+                            android:importantForAccessibility="no"
+                            android:paddingTop="10dp"
+                            app:srcCompat="@drawable/shriganpatiatharavshirshak"
+                            tools:ignore="RtlHardcoded,ImageContrastCheck" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/gradBookMarThree"
+                        android:layout_width="190dp"
+                        android:layout_height="295dp"
+                        android:layout_marginEnd="15dp"
+                        android:onClick="bookMarThree"
+                        app:cardCornerRadius="15dp"
+                        tools:ignore="TextSizeCheck">
+
+                        <TextView
+                            android:id="@+id/textBookMarThree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="240dp"
+                            android:layout_marginEnd="10dp"
+                            android:fontFamily="serif-monospace"
+                            android:text="@string/authorMarDiscription3"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageBookMarThree"
+                            android:layout_width="220dp"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="-15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:importantForAccessibility="no"
+                            android:paddingTop="10dp"
+                            app:srcCompat="@drawable/srikrushnacharitra"
+                            tools:ignore="RtlHardcoded,ImageContrastCheck" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/gradBookMarFour"
+                        android:layout_width="190dp"
+                        android:layout_height="295dp"
+                        android:layout_marginEnd="15dp"
+                        android:onClick="bookMarFour"
+                        app:cardCornerRadius="15dp"
+                        tools:ignore="TextSizeCheck">
+
+                        <TextView
+                            android:id="@+id/textBookMarFour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="240dp"
+                            android:layout_marginEnd="10dp"
+                            android:fontFamily="serif-monospace"
+                            android:text="@string/authorMarDiscription4"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageBookMarFour"
+                            android:layout_width="220dp"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="-15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:importantForAccessibility="no"
+                            android:paddingTop="10dp"
+                            app:srcCompat="@drawable/shrimadbhagwatgeeta"
+                            tools:ignore="RtlHardcoded,ImageContrastCheck" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!--Computer Science Book Started From Here-->
+
+            <TextView
+                android:id="@+id/bookDescriptionThree"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/computerBook"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollViewThree"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:foregroundGravity="center_vertical"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/gradBookComOne"
+                        android:layout_width="190dp"
+                        android:layout_height="295dp"
+                        android:layout_marginEnd="15dp"
+                        android:onClick="bookComOne"
+                        app:cardCornerRadius="15dp"
+                        tools:ignore="TextSizeCheck">
+
+                        <TextView
+                            android:id="@+id/textBookComOne"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="200dp"
+                            android:layout_marginEnd="10dp"
+                            android:fontFamily="serif-monospace"
+                            android:text="@string/authorComDiscription1"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageBookComOne"
+                            android:layout_width="220dp"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="-15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:importantForAccessibility="no"
+                            android:paddingLeft="40sp"
+                            android:paddingTop="-10sp"
+                            android:paddingRight="40sp"
+                            app:srcCompat="@drawable/cprogramming"
+                            tools:ignore="RtlHardcoded,ImageContrastCheck" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/gradBookComTwo"
+                        android:layout_width="190dp"
+                        android:layout_height="295dp"
+                        android:layout_marginEnd="15dp"
+                        android:onClick="bookComTwo"
+                        app:cardCornerRadius="15dp"
+                        tools:ignore="TextSizeCheck">
+
+                        <TextView
+                            android:id="@+id/textBookComTwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="220dp"
+                            android:layout_marginEnd="10dp"
+                            android:fontFamily="serif-monospace"
+                            android:text="@string/authorComDiscription2"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageBookComTwo"
+                            android:layout_width="220dp"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="-15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:importantForAccessibility="no"
+                            android:paddingTop="10dp"
+                            app:srcCompat="@drawable/cppprogramming"
+                            tools:ignore="RtlHardcoded,ImageContrastCheck" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/gradBookComThree"
+                        android:layout_width="190dp"
+                        android:layout_height="295dp"
+                        android:layout_marginEnd="15dp"
+                        android:onClick="bookComThree"
+                        app:cardCornerRadius="15dp"
+                        tools:ignore="TextSizeCheck">
+
+                        <TextView
+                            android:id="@+id/textBookComThree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="61dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="220dp"
+                            android:layout_marginEnd="10dp"
+                            android:fontFamily="serif-monospace"
+                            android:text="@string/authorComDiscription3"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="TextSizeCheck" />
+
+                        <ImageView
+                            android:id="@+id/imageBookComThree"
+                            android:layout_width="220dp"
+                            android:layout_height="200dp"
+                            android:importantForAccessibility="no"
+                            android:paddingTop="10dp"
+                            android:paddingRight="25sp"
+                            app:srcCompat="@drawable/javaprogramming"
+                            tools:ignore="ImageContrastCheck,RtlHardcoded,RtlSymmetry" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/gradBookComFour"
+                        android:layout_width="190dp"
+                        android:layout_height="295dp"
+                        android:layout_marginEnd="15dp"
+                        android:onClick="bookComFour"
+                        app:cardCornerRadius="15dp"
+                        tools:ignore="TextSizeCheck">
+
+                        <TextView
+                            android:id="@+id/textBookComFour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="220dp"
+                            android:fontFamily="serif-monospace"
+                            android:text="@string/authorComDiscription4"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageBookComFour"
+                            android:layout_width="220dp"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="-15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:importantForAccessibility="no"
+                            android:paddingTop="10dp"
+                            app:srcCompat="@drawable/datastructurewithjava"
+                            tools:ignore="RtlHardcoded,ImageContrastCheck" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/bookDescriptionFour"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/collegeBook"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollViewFour"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:foregroundGravity="center_vertical"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/gradBookClgOne"
+                        android:layout_width="190dp"
+                        android:layout_height="295dp"
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="15dp"
+                        tools:ignore="TextSizeCheck">
+
+                        <TextView
+                            android:id="@+id/textBookClgOne"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="200dp"
+                            android:layout_marginEnd="10dp"
+                            android:fontFamily="serif-monospace"
+                            android:text="@string/authorClgDiscription1"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageBookClgOne"
+                            android:layout_width="220dp"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="-15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:importantForAccessibility="no"
+                            android:paddingLeft="40sp"
+                            android:paddingTop="-10sp"
+                            android:paddingRight="40sp"
+                            app:srcCompat="@drawable/androidprogramming"
+                            tools:ignore="RtlHardcoded,ImageContrastCheck" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/gradBookClgTwo"
+                        android:layout_width="190dp"
+                        android:layout_height="295dp"
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="15dp"
+                        tools:ignore="TextSizeCheck">
+
+                        <TextView
+                            android:id="@+id/textBookClgTwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="220dp"
+                            android:layout_marginEnd="10dp"
+                            android:fontFamily="serif-monospace"
+                            android:text="@string/authorClgDiscription2"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageBookClgTwo"
+                            android:layout_width="220dp"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="-15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:importantForAccessibility="no"
+                            android:paddingTop="10dp"
+                            app:srcCompat="@drawable/advancejava"
+                            tools:ignore="RtlHardcoded,ImageContrastCheck" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/gradBookClgThree"
+                        android:layout_width="190dp"
+                        android:layout_height="295dp"
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="15dp"
+                        tools:ignore="TextSizeCheck">
+
+                        <TextView
+                            android:id="@+id/textBookClgThree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="61dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="220dp"
+                            android:layout_marginEnd="10dp"
+                            android:fontFamily="serif-monospace"
+                            android:text="@string/authorClgDiscription3"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageBookClgThree"
+                            android:layout_width="220dp"
+                            android:layout_height="200dp"
+                            android:importantForAccessibility="no"
+                            android:paddingTop="10dp"
+                            android:paddingRight="25sp"
+                            app:srcCompat="@drawable/recenttrendsinit"
+                            tools:ignore="ImageContrastCheck,RtlHardcoded,RtlSymmetry" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/gradBookClgFour"
+                        android:layout_width="190dp"
+                        android:layout_height="295dp"
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="15dp"
+                        tools:ignore="TextSizeCheck">
+
+                        <TextView
+                            android:id="@+id/textBookClgFour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="220dp"
+                            android:fontFamily="serif-monospace"
+                            android:text="@string/authorClgDiscription4"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlHardcoded" />
+
+                        <ImageView
+                            android:id="@+id/imageBookClgFour"
+                            android:layout_width="220dp"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="-15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:importantForAccessibility="no"
+                            android:paddingTop="10dp"
+                            app:srcCompat="@drawable/softwaretesting"
+                            tools:ignore="RtlHardcoded,ImageContrastCheck" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

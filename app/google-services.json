@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1025428966017",
+    "project_id": "library-2f76d",
+    "storage_bucket": "library-2f76d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025428966017:android:ba064a764cf1914a7d5b80",
+        "android_client_info": {
+          "package_name": "com.pscode.pslibrary"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnVnbFtqnneHNSyiYGlaSj40udd59uaIA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
